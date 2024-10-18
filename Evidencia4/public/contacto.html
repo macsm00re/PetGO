@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Dog</title>
+    <link rel="icon" href="images/Frame.png" type="Logop" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo divHeader">
+        <img src="./images/Frame.png" alt="logo" />
+        <a href="#">PetGo</a>
+      </div>
+      <div class="divHeaderopciones">
+        <div class="spacio"><a href="index.html">Inicio</a></div>
+        <div class="spacio"><a href="perros.html">Sobre Nosotros</a></div>
+        <div class="spacio"><a href="compras.html">Compras</a></div>
+        <div class="spacio"><a href="contacto.html">Contacto</a></div>
+      </div>
+
+    </header>
+    <div class="bannercontact">
+      <div class="tituloBannertexto">
+        Ofertas que no puedes dejar, <br />
+        en PetGo ven a aprovechar
+      </div>
+    </div>
+    <div class="form-container" style="margin-top: 30px">
+      <h2>Formulario de Contacto</h2>
+      <form id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+        <span id="emailError" class="error"></span>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span id="messageError" class="error"></span>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

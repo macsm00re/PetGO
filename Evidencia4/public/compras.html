@@ -1,0 +1,81 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Dog</title>
+    <link rel="icon" href="images/Frame.png" type="image/png">
+    <link rel="stylesheet" href="stylescarrito.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo divHeader">
+        <img src="./images/Frame.png" alt="logo">
+        <a href="#">PetGo</a>
+      </div>
+      <div class="divHeaderopciones">
+        <div class="spacio"><a href="index.html">Inicio</a></div>
+        <div class="spacio"><a href="perros.html">Perros</a></div>
+        <div class="spacio"><a href="gatos.html">Gatos</a></div>
+      </div>
+      <div class="carritocontainer">
+        <button class="cart__button">
+          <i class="material-icons">shopping_cart</i>
+        </button>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="tituloBannertexto">
+        <h4>¡Si a tu mascota quieres mimar, a PetGO tienes que llegar!</h4>
+      </div>
+      <div class="imgbanner">
+        <img src="images/Carrito.png" alt="">
+      </div>
+    </div>
+
+    <div class="bannercarrito">
+      <h1>Mi Carrito</h1>
+    </div>
+    <div class="bannersubcarrito">
+     
+      <table>
+          <thead>
+              <tr>
+                  <th>Descripción</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Eliminar</th>
+              </tr>
+          </thead>
+          <tbody id="carrito-body">
+              <tr>
+                  <td><img class="iconocompra" src="images/Carritocompra.png" alt="Kit de aseo para perros"> <br> Kit
+                      de aseo para perros</td>
+                  <td>
+                      <button class="btn-cantidad" onclick="cambiarCantidad(-1)">-</button>
+                      <span id="cantidad">1</span>
+                      <button class="btn-cantidad" onclick="cambiarCantidad(1)">+</button>
+                  </td>
+                  <td id="precio">S/ 11.00</td>
+                  <td><button class="btn-eliminar" onclick="eliminarItem()">X</button></td>
+              </tr>
+          </tbody>
+      </table>
+      <div class="total">
+          <p>Total compra: <span id="total-precio">S/ 11.00</span></p>
+          <button id="pagar-btn">Pagar</button>
+      </div>
+    </div>
+
+
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 <b>PetGO</b>. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="script02.js"></script>
+    <script src="carrito.js"></script>
+
